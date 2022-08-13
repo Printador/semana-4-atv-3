@@ -1,0 +1,24 @@
+class aluno: 
+  def __init__(self, idade = 0): 
+    self._idade = idade 
+    
+  def get_idade(self): 
+    return self._idade
+    
+  def set_idade(self, x): 
+    self._idade = x 
+
+  def __init__(self, altura = 0):
+    self._altura = altura
+
+  def get_altura(self):
+    return self._altura
+
+  def set_altura(self, y):
+    self._altura = y
+
+Ricardo = aluno() 
+Ricardo.set_idade(int(input("Qual a idade?: "))) 
+Ricardo.set_altura(float(input("Qual a altura?: "))) 
+print("Possui a idade de:",Ricardo.get_idade(),"ano(s).") 
+print("Possui a altura de:",Ricardo.get_altura(),"metros.")
